@@ -19,6 +19,15 @@ This repository demonstrates building a Node.js application with AI-assisted dev
 - **Language:** JavaScript
 - **Package management:** npm
 
+## Project status
+
+This repository currently holds project documentation and repository setup only. Application code and a `package.json` will be added as the capstone progresses.
+
+## Prerequisites
+
+- **Node.js** 20 LTS or later ([Download Node.js](https://nodejs.org/))
+- **npm** (included with Node.js)
+
 ## Installation
 
 1. Clone the repository:
@@ -28,23 +37,21 @@ This repository demonstrates building a Node.js application with AI-assisted dev
    cd my-capstone
    ```
 
-2. Install dependencies (when a `package.json` is present):
+2. When a `package.json` is available, install dependencies from the project root:
 
    ```bash
    npm install
    ```
 
-3. Copy any example environment file if the project adds one (e.g. `.env.example` → `.env`) and configure variables as documented.
-
 ## Usage
 
-After installation, run the project according to the scripts defined in `package.json`, for example:
+Once application scripts exist in `package.json`, run the project from the project root, for example:
 
 ```bash
 npm start
 ```
 
-For development with auto-reload (if configured):
+For local development with auto-reload (once a `dev` script is defined):
 
 ```bash
 npm run dev
