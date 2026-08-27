@@ -48,7 +48,7 @@ The testing phase took approximately 7 minutes in Round 1 and 6 minutes in Round
 
 Round 2 passed all 19 automated tests during verification, including validation, edge-case, reset, and accessibility checks. During manual comparison, I also observed that Round 2 retained the theme selector but did not include theme validation in validateSettings(), whereas Round 1 explicitly validated the theme value. The theme selector also did not visibly change the application's page theme in either round, so this was treated as an implementation limitation rather than a Round 2-specific defect.
 
-No blocking AI-generated defect was caught and fixed during my review. The comparison showed that precise requirements and automated verification produced a more testable and accessible implementation, while human review was still necessary to identify differences and omissions. The main lesson is that directing AI with explicit constraints and verification steps makes its output easier to evaluate than accepting a vague first-pass result.
+During manual verification, I found that the Round 2 theme selector did not actually apply the selected theme to the interface. The dropdown updated its form value, but the component contained no logic to apply the selected theme to the page. This was an AI-generated implementation gap identified during review. I did not fix it because the exercise compares the generated implementations rather than measuring post-review feature completion. This reinforced the importance of verifying behavior rather than assuming that a control is functional because the UI and state handling are present.
 
 
 
